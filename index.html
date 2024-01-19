@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <div class="header">
+          <h2>WORLD FLAGS</h2>
+          <div class="search-block">
+            <input type="search" placeholder="Search..." class="search" />
+            <div class="ion">
+              <ion-icon name="search-outline" class="btn"></ion-icon>
+            </div>
+          </div>
+          <!-- <button class="all">All flag</button> -->
+          <button type="submit" class="all">All Flags</button>
+          <li>
+            Sort
+            <i class="down"></i>
+            <div class="dropdown">
+              <a class="drop-link az" href="#">A-Z</a>
+              <a class="drop-link za" href="#">Z-A</a>
+              <a class="drop-link population" href="#">Population</a>
+              <a class="drop-link Asia" href="#">Asia</a>
+              <a class="drop-link Europe" href="#">Europe</a>
+            </div>
+          </li>
+
+          <!-- <select name="" id="select" class="">
+            <div class="dropdown">
+              <option value="" class="drop-link">Sort</option>
+              <option value="az" class="drop-link">A-Z</option>
+              <option value="za" class="drop-link">Z-A</option>
+              <option value="population" class="drop-link">Population</option>
+              <option value="Asia" class="drop-link">Asia</option>
+              <option value="Europe" class="drop-link">Europe</option>
+              <option value="Bishkek" class="drop-link">My country</option>
+            </div>
+          </select> -->
+        </div>
+      </div>
+    </section>
+    <section id="hero">
+      <img
+        src="https://www.sgs.com/-/media/sgscorp/images/natural-resources/large-sgs-world-edit.cdn.en.1.jpg"
+        alt=""
+        class="fon"
+      />
+      <div class="hero"></div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./dom.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water wave on Button</title>
+    <style>
+      button[type="submit"] {
+        padding: 15px 20px;
+        font-size: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: rgb(156, 148, 148, 0.5);
+        color: rgb(255, 255, 255);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      button[type="submit"]::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-radius: 8px;
+        z-index: -1;
+      }
+
+      button[type="submit"]:hover::before {
+        background-color: #2c08f8;
+        animation: loadingWave 1s linear;
+      }
+
+      @keyframes loadingWave {
+        0% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            99% 100%,
+            81% 100%,
+            64% 100%,
+            46% 100%,
+            29% 100%,
+            14% 100%,
+            0 100%
+          );
+        }
+
+        10% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            100% 90%,
+            84% 94%,
+            66% 95%,
+            47% 94%,
+            31% 95%,
+            14% 96%,
+            0 94%
+          );
+        }
+
+        20% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            100% 74%,
+            81% 72%,
+            63% 72%,
+            44% 75%,
+            33% 77%,
+            16% 78%,
+            0 74%
+          );
+        }
+
+        40% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            100% 53%,
+            85% 55%,
+            67% 58%,
+            44% 54%,
+            30% 48%,
+            15% 47%,
+            0 49%
+          );
+        }
+
+        60% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            100% 24%,
+            86% 25%,
+            69% 29%,
+            53% 34%,
+            37% 38%,
+            18% 40%,
+            0 38%
+          );
+        }
+        80% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            100% 22%,
+            84% 29%,
+            67% 31%,
+            45% 27%,
+            26% 17%,
+            12% 14%,
+            0 15%
+          );
+        }
+
+        90% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            100% 5%,
+            86% 10%,
+            73% 10%,
+            55% 6%,
+            33% 3%,
+            15% 5%,
+            0 9%
+          );
+        }
+
+        100% {
+          clip-path: polygon(
+            0% 100%,
+            100% 100%,
+            100% 0,
+            86% 0,
+            71% 0,
+            55% 0,
+            34% 0,
+            18% 0,
+            0 0
+          );
+        }
+      }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
